@@ -1,0 +1,9 @@
+# IntelliJ IDEA CONFIG
+.idea/
+*.iml
+
+# Compiled
+target/
+
+# Logs
+*.log
