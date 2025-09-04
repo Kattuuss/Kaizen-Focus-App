@@ -1,14 +1,18 @@
 package com.kaizen.kaizenclient.controllers;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class HelloController {
-    @FXML
-    private Label welcomeText;
+    //@FXML
+    //Button menuButton = (Button);
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    public void initialize() {}
+
+    @FXML
+    protected void onMenuButtonClick() {
+
     }
 }

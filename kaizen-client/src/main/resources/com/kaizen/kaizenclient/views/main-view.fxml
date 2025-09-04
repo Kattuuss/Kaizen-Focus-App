@@ -1,32 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="1200.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <BorderPane layoutX="400.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
-            <AnchorPane maxHeight="0.0" maxWidth="0.0" minHeight="75.0" minWidth="1200.0" BorderPane.alignment="CENTER">
-               <children>
-                  <Pane layoutX="14.0" prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: blue;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-               </children>
+            <AnchorPane prefHeight="50.0" prefWidth="1200.0" style="-fx-background-color: #ffdead;" BorderPane.alignment="CENTER">
                <BorderPane.margin>
                   <Insets />
                </BorderPane.margin>
+               <children>
+                  <FontAwesomeIconView fx:id="menu" glyphName="BARS" layoutX="23.0" layoutY="35.0" size="30" text="">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fx:id="menuBack" glyphName="BARS" layoutX="23.0" layoutY="35.0" size="30">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </FontAwesomeIconView>
+               </children>
             </AnchorPane>
          </top>
          <left>
-            <AnchorPane prefHeight="100.0" prefWidth="225.0" BorderPane.alignment="CENTER">
+            <AnchorPane fx:id="slider" prefHeight="550.0" prefWidth="250.0" style="-fx-background-color: bisque;" BorderPane.alignment="CENTER">
                <children>
-                  <VBox prefHeight="325.0" prefWidth="175.0" style="-fx-background-color: bisque;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <VBox prefHeight="550.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" prefHeight="65.0" prefWidth="250.0" text="Museum">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="INSTITUTION" />
+                           </graphic>
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" prefHeight="65.0" prefWidth="250.0" text="Profile">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USER_CIRCLE" />
+                           </graphic>
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" prefHeight="65.0" prefWidth="250.0" text="Quests">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="COMPASS" />
+                           </graphic>
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" prefHeight="65.0" prefWidth="250.0" text="Store">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="TAG" />
+                           </graphic>
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" prefHeight="65.0" prefWidth="250.0" text="Help">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="QUESTION_CIRCLE" />
+                           </graphic>
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
                </children>
             </AnchorPane>
          </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Arc fill="#ffffff00" layoutX="450.0" layoutY="200.0" length="360.0" radiusX="150.0" radiusY="150.0" startAngle="90.0" stroke="SANDYBROWN" strokeType="INSIDE" strokeWidth="15.0" />
+                  <Circle fill="#964b00" layoutX="450.0" layoutY="58.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </AnchorPane>
+         </center>
       </BorderPane>
    </children>
 </AnchorPane>
